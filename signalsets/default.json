@@ -1,6 +1,7 @@
 [
   {
     "description" : "Current vehicle speed",
+    "header" : 2016,
     "message" : {
       "service22" : {
         "pid" : 62477
