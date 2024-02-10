@@ -1,6 +1,6 @@
 [
   {
-    "description" : "Current vehicle speed",
+    "description" : "Current vehicle speed.",
     "header" : 2016,
     "message" : {
       "service22" : {
@@ -23,5 +23,30 @@
       ]
     },
     "updateFrequency" : 0.25
+  },
+  {
+    "description" : "How long it's been since the engine started.",
+    "header" : 2016,
+    "message" : {
+      "service22" : {
+        "pid" : 62495
+      }
+    },
+    "name" : "Time since engine start",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 65535,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "seconds"
+        }
+      ]
+    },
+    "updateFrequency" : 1
   }
 ]
