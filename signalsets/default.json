@@ -1,0 +1,26 @@
+[
+  {
+    "description" : "Current vehicle speed",
+    "message" : {
+      "service22" : {
+        "pid" : 62477
+      }
+    },
+    "name" : "Vehicle speed",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 8,
+          "bitOffset" : 0,
+          "max" : 255,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "kilometersPerHour"
+        }
+      ]
+    },
+    "updateFrequency" : 0.25
+  }
+]
