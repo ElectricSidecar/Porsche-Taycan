@@ -2,7 +2,7 @@
   {
     "description" : "Current vehicle speed.",
     "header" : 2016,
-    "message" : {
+    "parameter" : {
       "service22" : {
         "pid" : 62477
       }
@@ -27,7 +27,7 @@
   {
     "description" : "How long it's been since the engine started.",
     "header" : 2016,
-    "message" : {
+    "parameter" : {
       "service22" : {
         "pid" : 62495
       }
