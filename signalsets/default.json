@@ -48,5 +48,30 @@
       ]
     },
     "updateFrequency" : 1
-  }
+  },
+  {
+    "description" : "High voltage battery state of charge.",
+    "header" : 2016,
+    "parameter" : {
+      "service22" : {
+        "pid" : 4438
+      }
+    },
+    "name" : "HV battery charge",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 8,
+          "bitOffset" : 0,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.5,
+          "signed" : false,
+          "unit" : "percentage"
+        }
+      ]
+    },
+    "updateFrequency" : 1
+  },
 ]
