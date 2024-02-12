@@ -22,7 +22,8 @@
         }
       ]
     },
-    "updateFrequency" : 0.25
+    "updateFrequency" : 0.25,
+    "suggestedMetric": "speed"
   },
   {
     "description" : "How long it's been since the engine started.",
@@ -72,6 +73,7 @@
         }
       ]
     },
-    "updateFrequency" : 1
+    "updateFrequency" : 1,
+    "suggestedMetric": "stateOfCharge"
   },
 ]
