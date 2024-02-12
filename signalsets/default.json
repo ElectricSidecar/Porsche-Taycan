@@ -54,19 +54,19 @@
     "header" : 2016,
     "parameter" : {
       "service22" : {
-        "pid" : 4438
+        "pid" : 2258
       }
     },
     "name" : "HV battery charge",
     "signal" : {
       "scaling" : [
         {
-          "bitLength" : 8,
+          "bitLength" : 16,
           "bitOffset" : 0,
           "max" : 100,
           "min" : 0,
           "offset" : 0,
-          "scalar" : 0.5,
+          "scalar" : 0.01,
           "signed" : false,
           "unit" : "percentage"
         }
