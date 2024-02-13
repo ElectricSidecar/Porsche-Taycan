@@ -1,5 +1,6 @@
 [
   {
+    "id": "[ECU] VehicleSpeed",
     "description" : "Current vehicle speed.",
     "header" : 2016,
     "parameter" : {
@@ -26,6 +27,7 @@
     "suggestedMetric": "speed"
   },
   {
+    "id": "[ECU] EngineRunTime",
     "description" : "How long it's been since the engine started.",
     "header" : 2016,
     "parameter" : {
@@ -51,6 +53,7 @@
     "updateFrequency" : 1
   },
   {
+    "id": "[ECU] HVBatterySoC",
     "description" : "High voltage battery state of charge.",
     "header" : 2016,
     "parameter" : {
