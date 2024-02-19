@@ -72,7 +72,7 @@
           "offset" : 0,
           "scalar" : 0.01,
           "signed" : false,
-          "unit" : "percentage"
+          "unit" : "percent"
         }
       ]
     },
