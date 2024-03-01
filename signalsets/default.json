@@ -1,5 +1,32 @@
 [
   {
+    "id": "[ECU] HVBatterySoC",
+    "description" : "High voltage battery state of charge.",
+    "header" : 2016,
+    "parameter" : {
+      "service22" : {
+        "pid" : 2258
+      }
+    },
+    "name" : "HV battery charge",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.01,
+          "signed" : false,
+          "unit" : "percent"
+        }
+      ]
+    },
+    "updateFrequency" : 1,
+    "suggestedMetric": "stateOfCharge"
+  },
+  {
     "id": "[ECU] VehicleSpeed",
     "description" : "Current vehicle speed.",
     "header" : 2016,
@@ -53,30 +80,28 @@
     "updateFrequency" : 1
   },
   {
-    "id": "[ECU] HVBatterySoC",
-    "description" : "High voltage battery state of charge.",
+    "id": "[ECU] Voltage",
     "header" : 2016,
     "parameter" : {
       "service22" : {
-        "pid" : 2258
+        "pid" : 62530
       }
     },
-    "name" : "HV battery charge",
+    "name" : "Control module voltage",
     "signal" : {
       "scaling" : [
         {
           "bitLength" : 16,
           "bitOffset" : 0,
-          "max" : 100,
+          "max" : 65,
           "min" : 0,
           "offset" : 0,
-          "scalar" : 0.01,
+          "scalar" : 0.001,
           "signed" : false,
-          "unit" : "percent"
+          "unit" : "volts"
         }
       ]
     },
-    "updateFrequency" : 1,
-    "suggestedMetric": "stateOfCharge"
+    "updateFrequency" : 0.25,
   },
 ]
