@@ -154,4 +154,29 @@
     },
     "updateFrequency" : 0.25,
   },
+  {
+    "id": "[CHRGR] HV Highside Voltage",
+    "header" : 1860,
+    "parameter" : {
+      "service22" : {
+        "pid" : 5460
+      }
+    },
+    "name" : "HV total voltage",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 10000,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.25,
+          "signed" : false,
+          "unit" : "volts"
+        }
+      ]
+    },
+    "updateFrequency" : 1,
+  },
 ]
