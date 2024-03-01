@@ -27,6 +27,56 @@
     "suggestedMetric": "stateOfCharge"
   },
   {
+    "id": "[ECU] Acc.PedalPos1",
+    "header" : 2016,
+    "parameter" : {
+      "service22" : {
+        "pid" : 8289
+      }
+    },
+    "name" : "Accelerator pedal position sensor 1",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 65,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.001,
+          "signed" : false,
+          "unit" : "volts"
+        }
+      ]
+    },
+    "updateFrequency" : 0.25
+  },
+  {
+    "id": "[ECU] Acc.PedalPos2",
+    "header" : 2016,
+    "parameter" : {
+      "service22" : {
+        "pid" : 8290
+      }
+    },
+    "name" : "Accelerator pedal position sensor 2",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 65,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.001,
+          "signed" : false,
+          "unit" : "volts"
+        }
+      ]
+    },
+    "updateFrequency" : 0.25
+  },
+  {
     "id": "[ECU] VehicleSpeed",
     "description" : "Current vehicle speed.",
     "header" : 2016,
