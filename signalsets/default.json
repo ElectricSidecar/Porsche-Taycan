@@ -180,4 +180,30 @@
     },
     "updateFrequency" : 3600,
   },
+  {
+    "id": "[ABS] SteerWheel.Angle",
+    "description" : "Positive is rotated to the left, negative is rotated to the right.",
+    "header" : 1811,
+    "parameter" : {
+      "service22" : {
+        "pid" : 11049
+      }
+    },
+    "name" : "Steering wheel angle",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 360,
+          "min" : -360,
+          "offset" : 0,
+          "scalar" : 0.001,
+          "signed" : true,
+          "unit" : "radians"
+        }
+      ]
+    },
+    "updateFrequency" : 0.25,
+  },
 ]
