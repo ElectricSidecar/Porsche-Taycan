@@ -154,4 +154,30 @@
     },
     "updateFrequency" : 0.25,
   },
+  {
+    "id": "[BMS] LaunchCount",
+    "description" : "How many times you've initiated launch control on the car.",
+    "header" : 2021,
+    "parameter" : {
+      "service22" : {
+        "pid" : 20992
+      }
+    },
+    "name" : "Launch control count",
+    "signal" : {
+      "scaling" : [
+        {
+          "bitLength" : 32,
+          "bitOffset" : 0,
+          "max" : 1000000,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "scalar"
+        }
+      ]
+    },
+    "updateFrequency" : 3600,
+  },
 ]
