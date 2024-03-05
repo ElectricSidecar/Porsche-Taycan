@@ -97,11 +97,11 @@
           "unit" : "kilometersPerHour"
         },
         "id": "[ECU] VehicleSpeed",
-        "name" : "Vehicle speed"
+        "name" : "Vehicle speed",
+        "suggestedMetric": "speed"
       }
     ],
-    "updateFrequency" : 0.25,
-    "suggestedMetric": "speed"
+    "updateFrequency" : 0.25
   },
   {
     "header" : 2016,
