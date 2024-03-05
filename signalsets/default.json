@@ -1,209 +1,241 @@
 [
   {
-    "id": "[ECU] HVBatterySoC",
-    "description" : "High voltage battery state of charge.",
     "header" : 2016,
     "parameter" : {
       "service22" : {
         "pid" : 2258
       }
     },
-    "name" : "HV battery charge",
-    "signal" : {
-      "scaling" : [
-        {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 100,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.01,
-          "signed" : false,
-          "unit" : "percent"
-        }
-      ]
-    },
-    "updateFrequency" : 1,
-    "suggestedMetric": "stateOfCharge"
+    "signals" : [
+      {
+        "description" : "High voltage battery state of charge.",
+        "format" : {
+          "scaling" : [
+            {
+              "bitLength" : 16,
+              "bitOffset" : 0,
+              "max" : 100,
+              "min" : 0,
+              "offset" : 0,
+              "scalar" : 0.01,
+              "signed" : false,
+              "unit" : "percent"
+            }
+          ]
+        },
+        "id": "[ECU] HVBatterySoC",
+        "name" : "HV battery charge",
+        "suggestedMetric": "stateOfCharge"
+      }
+    ],
+    "updateFrequency" : 1
   },
   {
-    "id": "[ECU] Acc.PedalPos1",
     "header" : 2016,
     "parameter" : {
       "service22" : {
         "pid" : 8289
       }
     },
-    "name" : "Accelerator pedal position sensor 1",
-    "signal" : {
-      "scaling" : [
-        {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 65,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.001,
-          "signed" : false,
-          "unit" : "volts"
-        }
-      ]
-    },
+    "signals" : [
+      {
+        "format" : {
+          "scaling" : [
+            {
+              "bitLength" : 16,
+              "bitOffset" : 0,
+              "max" : 65,
+              "min" : 0,
+              "offset" : 0,
+              "scalar" : 0.001,
+              "signed" : false,
+              "unit" : "volts"
+            }
+          ]
+        },
+        "id": "[ECU] Acc.PedalPos1",
+        "name" : "Accelerator pedal position sensor 1"
+      }
+    ],
     "updateFrequency" : 0.25
   },
   {
-    "id": "[ECU] Acc.PedalPos2",
     "header" : 2016,
     "parameter" : {
       "service22" : {
         "pid" : 8290
       }
     },
-    "name" : "Accelerator pedal position sensor 2",
-    "signal" : {
-      "scaling" : [
-        {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 65,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.001,
-          "signed" : false,
-          "unit" : "volts"
-        }
-      ]
-    },
+    "signals" : [
+      {
+        "format" : {
+          "scaling" : [
+            {
+              "bitLength" : 16,
+              "bitOffset" : 0,
+              "max" : 65,
+              "min" : 0,
+              "offset" : 0,
+              "scalar" : 0.001,
+              "signed" : false,
+              "unit" : "volts"
+            }
+          ]
+        },
+        "id": "[ECU] Acc.PedalPos2",
+        "name" : "Accelerator pedal position sensor 2"
+      }
+    ],
     "updateFrequency" : 0.25
   },
   {
-    "id": "[ECU] VehicleSpeed",
-    "description" : "Current vehicle speed.",
     "header" : 2016,
     "parameter" : {
       "service22" : {
         "pid" : 62477
       }
     },
-    "name" : "Vehicle speed",
-    "signal" : {
-      "scaling" : [
-        {
-          "bitLength" : 8,
-          "bitOffset" : 0,
-          "max" : 255,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "kilometersPerHour"
-        }
-      ]
-    },
+    "signals" : [
+      {
+        "description" : "Current vehicle speed.",
+        "format" : {
+          "scaling" : [
+            {
+              "bitLength" : 8,
+              "bitOffset" : 0,
+              "max" : 255,
+              "min" : 0,
+              "offset" : 0,
+              "scalar" : 1,
+              "signed" : false,
+              "unit" : "kilometersPerHour"
+            }
+          ]
+        },
+        "id": "[ECU] VehicleSpeed",
+        "name" : "Vehicle speed"
+      }
+    ],
     "updateFrequency" : 0.25,
     "suggestedMetric": "speed"
   },
   {
-    "id": "[ECU] EngineRunTime",
-    "description" : "How long it's been since the engine started.",
     "header" : 2016,
     "parameter" : {
       "service22" : {
         "pid" : 62495
       }
     },
-    "name" : "Time since engine start",
-    "signal" : {
-      "scaling" : [
-        {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 65535,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "seconds"
-        }
-      ]
-    },
+    "signals" : [
+      {
+        "description" : "How long it's been since the engine started.",
+        "format" : {
+          "scaling" : [
+            {
+              "bitLength" : 16,
+              "bitOffset" : 0,
+              "max" : 65535,
+              "min" : 0,
+              "offset" : 0,
+              "scalar" : 1,
+              "signed" : false,
+              "unit" : "seconds"
+            }
+          ]
+        },
+        "id": "[ECU] EngineRunTime",
+        "name" : "Time since engine start"
+      }
+    ],
     "updateFrequency" : 1
   },
   {
-    "id": "[ECU] Voltage",
     "header" : 2016,
     "parameter" : {
       "service22" : {
         "pid" : 62530
       }
     },
-    "name" : "Control module voltage",
-    "signal" : {
-      "scaling" : [
-        {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 65,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.001,
-          "signed" : false,
-          "unit" : "volts"
-        }
-      ]
-    },
-    "updateFrequency" : 0.25,
+    "signals" : [
+      {
+        "format" : {
+          "scaling" : [
+            {
+              "bitLength" : 16,
+              "bitOffset" : 0,
+              "max" : 65,
+              "min" : 0,
+              "offset" : 0,
+              "scalar" : 0.001,
+              "signed" : false,
+              "unit" : "volts"
+            }
+          ]
+        },
+        "id": "[ECU] Voltage",
+        "name" : "Control module voltage"
+      }
+    ],
+    "updateFrequency" : 0.25
   },
   {
-    "id": "[BMS] LaunchCount",
-    "description" : "How many times you've initiated launch control on the car.",
     "header" : 2021,
     "parameter" : {
       "service22" : {
         "pid" : 20992
       }
     },
-    "name" : "Launch control count",
-    "signal" : {
-      "scaling" : [
-        {
-          "bitLength" : 32,
-          "bitOffset" : 0,
-          "max" : 1000000,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "scalar"
-        }
-      ]
-    },
-    "updateFrequency" : 3600,
+    "signals" : [
+      {
+        "description" : "How many times you've initiated launch control on the car.",
+        "format" : {
+          "scaling" : [
+            {
+              "bitLength" : 32,
+              "bitOffset" : 0,
+              "max" : 1000000,
+              "min" : 0,
+              "offset" : 0,
+              "scalar" : 1,
+              "signed" : false,
+              "unit" : "scalar"
+            }
+          ]
+        },
+        "id": "[BMS] LaunchCount",
+        "name" : "Launch control count"
+      }
+    ],
+    "updateFrequency" : 3600
   },
   {
-    "id": "[ABS] SteerWheel.Angle",
-    "description" : "Positive is rotated to the left, negative is rotated to the right.",
     "header" : 1811,
     "parameter" : {
       "service22" : {
         "pid" : 11049
       }
     },
-    "name" : "Steering wheel angle",
-    "signal" : {
-      "scaling" : [
-        {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 360,
-          "min" : -360,
-          "offset" : 0,
-          "scalar" : 0.001,
-          "signed" : true,
-          "unit" : "radians"
-        }
-      ]
-    },
-    "updateFrequency" : 0.25,
+    "signals" : [
+      {
+        "description" : "Positive is rotated to the left, negative is rotated to the right.",
+        "format" : {
+          "scaling" : [
+            {
+              "bitLength" : 16,
+              "bitOffset" : 0,
+              "max" : 360,
+              "min" : -360,
+              "offset" : 0,
+              "scalar" : 0.001,
+              "signed" : true,
+              "unit" : "radians"
+            }
+          ]
+        },
+        "id": "[ABS] SteerWheel.Angle",
+        "name" : "Steering wheel angle"
+      }
+    ],
+    "updateFrequency" : 0.25
   },
 ]
