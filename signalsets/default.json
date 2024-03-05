@@ -206,4 +206,197 @@
     ],
     "updateFrequency" : 0.25
   },
+  {
+    "header" : 2021,
+    "parameter" : {
+      "service22" : {
+        "pid" : 6224
+      }
+    },
+    "signals" : [
+      {
+        "format" : {
+          "bitLength" : 8,
+          "bitOffset" : 24,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "percent"
+        },
+        "id" : "[BMS] Mod1.Cel1.SoC",
+        "name" : "High voltage battery module 1 cell 1 state of charge"
+      },
+      {
+        "format" : {
+          "bitLength" : 16,
+          "bitOffset" : 8,
+          "max" : 10,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.0001,
+          "signed" : false,
+          "unit" : "volts"
+        },
+        "id" : "[BMS] Mod1.Cel1.Volts",
+        "name" : "High voltage battery module 1 cell 1 voltage"
+      },
+      {
+        "format" : {
+          "bitLength" : 8,
+          "bitOffset" : 80,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "percent"
+        },
+        "id" : "[BMS] Mod1.Cel2.SoC",
+        "name" : "High voltage battery module 1 cell 2 state of charge"
+      },
+      {
+        "format" : {
+          "bitLength" : 16,
+          "bitOffset" : 64,
+          "max" : 10,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.0001,
+          "signed" : false,
+          "unit" : "volts"
+        },
+        "id" : "[BMS] Mod1.Cel2.Volts",
+        "name" : "High voltage battery module 1 cell 2 voltage"
+      },
+      {
+        "format" : {
+          "bitLength" : 8,
+          "bitOffset" : 136,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "percent"
+        },
+        "id" : "[BMS] Mod1.Cel3.SoC",
+        "name" : "High voltage battery module 1 cell 3 state of charge"
+      },
+      {
+        "format" : {
+          "bitLength" : 16,
+          "bitOffset" : 120,
+          "max" : 10,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.0001,
+          "signed" : false,
+          "unit" : "volts"
+        },
+        "id" : "[BMS] Mod1.Cel3.Volts",
+        "name" : "High voltage battery module 1 cell 3 voltage"
+      },
+      {
+        "format" : {
+          "bitLength" : 8,
+          "bitOffset" : 192,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "percent"
+        },
+        "id" : "[BMS] Mod1.Cel4.SoC",
+        "name" : "High voltage battery module 1 cell 4 state of charge"
+      },
+      {
+        "format" : {
+          "bitLength" : 16,
+          "bitOffset" : 176,
+          "max" : 10,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.0001,
+          "signed" : false,
+          "unit" : "volts"
+        },
+        "id" : "[BMS] Mod1.Cel4.Volts",
+        "name" : "High voltage battery module 1 cell 4 voltage"
+      },
+      {
+        "format" : {
+          "bitLength" : 8,
+          "bitOffset" : 248,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "percent"
+        },
+        "id" : "[BMS] Mod1.Cel5.SoC",
+        "name" : "High voltage battery module 1 cell 5 state of charge"
+      },
+      {
+        "format" : {
+          "bitLength" : 16,
+          "bitOffset" : 232,
+          "max" : 10,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.0001,
+          "signed" : false,
+          "unit" : "volts"
+        },
+        "id" : "[BMS] Mod1.Cel5.Volts",
+        "name" : "High voltage battery module 1 cell 5 voltage"
+      },
+      {
+        "format" : {
+          "bitLength" : 8,
+          "bitOffset" : 304,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "percent"
+        },
+        "id" : "[BMS] Mod1.Cel6.SoC",
+        "name" : "High voltage battery module 1 cell 6 state of charge"
+      },
+      {
+        "format" : {
+          "bitLength" : 16,
+          "bitOffset" : 288,
+          "max" : 10,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.0001,
+          "signed" : false,
+          "unit" : "volts"
+        },
+        "id" : "[BMS] Mod1.Cel6.Volts",
+        "name" : "High voltage battery module 1 cell 6 voltage"
+      },
+      {
+        "format" : {
+          "bitLength" : 8,
+          "bitOffset" : 0,
+          "max" : 255,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "scalar"
+        },
+        "id" : "[BMS] Mod1.ID",
+        "name" : "High voltage battery module 1 id"
+      }
+    ],
+    "updateFrequency" : 10
+  }
 ]
