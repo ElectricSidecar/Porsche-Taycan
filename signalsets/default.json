@@ -10,18 +10,14 @@
       {
         "description" : "High voltage battery state of charge.",
         "format" : {
-          "scaling" : [
-            {
-              "bitLength" : 16,
-              "bitOffset" : 0,
-              "max" : 100,
-              "min" : 0,
-              "offset" : 0,
-              "scalar" : 0.01,
-              "signed" : false,
-              "unit" : "percent"
-            }
-          ]
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 100,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.01,
+          "signed" : false,
+          "unit" : "percent"
         },
         "id": "[ECU] HVBatterySoC",
         "name" : "HV battery charge",
@@ -40,18 +36,14 @@
     "signals" : [
       {
         "format" : {
-          "scaling" : [
-            {
-              "bitLength" : 16,
-              "bitOffset" : 0,
-              "max" : 65,
-              "min" : 0,
-              "offset" : 0,
-              "scalar" : 0.001,
-              "signed" : false,
-              "unit" : "volts"
-            }
-          ]
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 65,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.001,
+          "signed" : false,
+          "unit" : "volts"
         },
         "id": "[ECU] Acc.PedalPos1",
         "name" : "Accelerator pedal position sensor 1"
@@ -69,18 +61,14 @@
     "signals" : [
       {
         "format" : {
-          "scaling" : [
-            {
-              "bitLength" : 16,
-              "bitOffset" : 0,
-              "max" : 65,
-              "min" : 0,
-              "offset" : 0,
-              "scalar" : 0.001,
-              "signed" : false,
-              "unit" : "volts"
-            }
-          ]
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 65,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.001,
+          "signed" : false,
+          "unit" : "volts"
         },
         "id": "[ECU] Acc.PedalPos2",
         "name" : "Accelerator pedal position sensor 2"
@@ -99,18 +87,14 @@
       {
         "description" : "Current vehicle speed.",
         "format" : {
-          "scaling" : [
-            {
-              "bitLength" : 8,
-              "bitOffset" : 0,
-              "max" : 255,
-              "min" : 0,
-              "offset" : 0,
-              "scalar" : 1,
-              "signed" : false,
-              "unit" : "kilometersPerHour"
-            }
-          ]
+          "bitLength" : 8,
+          "bitOffset" : 0,
+          "max" : 255,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "kilometersPerHour"
         },
         "id": "[ECU] VehicleSpeed",
         "name" : "Vehicle speed"
@@ -130,18 +114,14 @@
       {
         "description" : "How long it's been since the engine started.",
         "format" : {
-          "scaling" : [
-            {
-              "bitLength" : 16,
-              "bitOffset" : 0,
-              "max" : 65535,
-              "min" : 0,
-              "offset" : 0,
-              "scalar" : 1,
-              "signed" : false,
-              "unit" : "seconds"
-            }
-          ]
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 65535,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "seconds"
         },
         "id": "[ECU] EngineRunTime",
         "name" : "Time since engine start"
@@ -159,18 +139,14 @@
     "signals" : [
       {
         "format" : {
-          "scaling" : [
-            {
-              "bitLength" : 16,
-              "bitOffset" : 0,
-              "max" : 65,
-              "min" : 0,
-              "offset" : 0,
-              "scalar" : 0.001,
-              "signed" : false,
-              "unit" : "volts"
-            }
-          ]
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 65,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 0.001,
+          "signed" : false,
+          "unit" : "volts"
         },
         "id": "[ECU] Voltage",
         "name" : "Control module voltage"
@@ -189,18 +165,14 @@
       {
         "description" : "How many times you've initiated launch control on the car.",
         "format" : {
-          "scaling" : [
-            {
-              "bitLength" : 32,
-              "bitOffset" : 0,
-              "max" : 1000000,
-              "min" : 0,
-              "offset" : 0,
-              "scalar" : 1,
-              "signed" : false,
-              "unit" : "scalar"
-            }
-          ]
+          "bitLength" : 32,
+          "bitOffset" : 0,
+          "max" : 1000000,
+          "min" : 0,
+          "offset" : 0,
+          "scalar" : 1,
+          "signed" : false,
+          "unit" : "scalar"
         },
         "id": "[BMS] LaunchCount",
         "name" : "Launch control count"
@@ -219,18 +191,14 @@
       {
         "description" : "Positive is rotated to the left, negative is rotated to the right.",
         "format" : {
-          "scaling" : [
-            {
-              "bitLength" : 16,
-              "bitOffset" : 0,
-              "max" : 360,
-              "min" : -360,
-              "offset" : 0,
-              "scalar" : 0.001,
-              "signed" : true,
-              "unit" : "radians"
-            }
-          ]
+          "bitLength" : 16,
+          "bitOffset" : 0,
+          "max" : 360,
+          "min" : -360,
+          "offset" : 0,
+          "scalar" : 0.001,
+          "signed" : true,
+          "unit" : "radians"
         },
         "id": "[ABS] SteerWheel.Angle",
         "name" : "Steering wheel angle"
