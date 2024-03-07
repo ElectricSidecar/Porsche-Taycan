@@ -1,402 +1,50 @@
 [
-  {
-    "header" : 2016,
-    "parameter" : {
-      "service22" : {
-        "pid" : 2258
-      }
-    },
-    "signals" : [
-      {
-        "description" : "High voltage battery state of charge.",
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 100,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.01,
-          "signed" : false,
-          "unit" : "percent"
-        },
-        "id": "[ECU] HVBatterySoC",
-        "name" : "HV battery charge",
-        "suggestedMetric": "stateOfCharge"
-      }
-    ],
-    "updateFrequency" : 1
-  },
-  {
-    "header" : 2016,
-    "parameter" : {
-      "service22" : {
-        "pid" : 8289
-      }
-    },
-    "signals" : [
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 65,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id": "[ECU] Acc.PedalPos1",
-        "name" : "Accelerator pedal position sensor 1"
-      }
-    ],
-    "updateFrequency" : 0.25
-  },
-  {
-    "header" : 2016,
-    "parameter" : {
-      "service22" : {
-        "pid" : 8290
-      }
-    },
-    "signals" : [
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 65,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id": "[ECU] Acc.PedalPos2",
-        "name" : "Accelerator pedal position sensor 2"
-      }
-    ],
-    "updateFrequency" : 0.25
-  },
-  {
-    "header" : 2016,
-    "parameter" : {
-      "service22" : {
-        "pid" : 62477
-      }
-    },
-    "signals" : [
-      {
-        "description" : "Current vehicle speed.",
-        "format" : {
-          "bitLength" : 8,
-          "bitOffset" : 0,
-          "max" : 255,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "kilometersPerHour"
-        },
-        "id": "[ECU] VehicleSpeed",
-        "name" : "Vehicle speed",
-        "suggestedMetric": "speed"
-      }
-    ],
-    "updateFrequency" : 0.25
-  },
-  {
-    "header" : 2016,
-    "parameter" : {
-      "service22" : {
-        "pid" : 62495
-      }
-    },
-    "signals" : [
-      {
-        "description" : "How long it's been since the engine started.",
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 65535,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "seconds"
-        },
-        "id": "[ECU] EngineRunTime",
-        "name" : "Time since engine start"
-      }
-    ],
-    "updateFrequency" : 1
-  },
-  {
-    "header" : 2016,
-    "parameter" : {
-      "service22" : {
-        "pid" : 62530
-      }
-    },
-    "signals" : [
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 65,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id": "[ECU] Voltage",
-        "name" : "Control module voltage"
-      }
-    ],
-    "updateFrequency" : 0.25
-  },
-  {
-    "header" : 2021,
-    "parameter" : {
-      "service22" : {
-        "pid" : 20992
-      }
-    },
-    "signals" : [
-      {
-        "description" : "How many times you've initiated launch control on the car.",
-        "format" : {
-          "bitLength" : 32,
-          "bitOffset" : 0,
-          "max" : 1000000,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "scalar"
-        },
-        "id": "[BMS] LaunchCount",
-        "name" : "Launch control count"
-      }
-    ],
-    "updateFrequency" : 3600
-  },
-  {
-    "header" : 1811,
-    "parameter" : {
-      "service22" : {
-        "pid" : 11049
-      }
-    },
-    "signals" : [
-      {
-        "description" : "Positive is rotated to the left, negative is rotated to the right.",
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 0,
-          "max" : 360,
-          "min" : -360,
-          "offset" : 0,
-          "scalar" : 0.001,
-          "signed" : true,
-          "unit" : "radians"
-        },
-        "id": "[ABS] SteerWheel.Angle",
-        "name" : "Steering wheel angle"
-      }
-    ],
-    "updateFrequency" : 0.25
-  },
-  {
-    "header" : 2021,
-    "parameter" : {
-      "service22" : {
-        "pid" : 6224
-      }
-    },
-    "signals" : [
-      {
-        "format" : {
-          "bitLength" : 8,
-          "bitOffset" : 24,
-          "max" : 100,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "percent"
-        },
-        "id" : "[BMS] Mod1.Cel1.SoC",
-        "name" : "High voltage battery module 1 cell 1 state of charge"
-      },
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 8,
-          "max" : 10,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.0001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id" : "[BMS] Mod1.Cel1.Volts",
-        "name" : "High voltage battery module 1 cell 1 voltage"
-      },
-      {
-        "format" : {
-          "bitLength" : 8,
-          "bitOffset" : 80,
-          "max" : 100,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "percent"
-        },
-        "id" : "[BMS] Mod1.Cel2.SoC",
-        "name" : "High voltage battery module 1 cell 2 state of charge"
-      },
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 64,
-          "max" : 10,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.0001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id" : "[BMS] Mod1.Cel2.Volts",
-        "name" : "High voltage battery module 1 cell 2 voltage"
-      },
-      {
-        "format" : {
-          "bitLength" : 8,
-          "bitOffset" : 136,
-          "max" : 100,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "percent"
-        },
-        "id" : "[BMS] Mod1.Cel3.SoC",
-        "name" : "High voltage battery module 1 cell 3 state of charge"
-      },
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 120,
-          "max" : 10,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.0001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id" : "[BMS] Mod1.Cel3.Volts",
-        "name" : "High voltage battery module 1 cell 3 voltage"
-      },
-      {
-        "format" : {
-          "bitLength" : 8,
-          "bitOffset" : 192,
-          "max" : 100,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "percent"
-        },
-        "id" : "[BMS] Mod1.Cel4.SoC",
-        "name" : "High voltage battery module 1 cell 4 state of charge"
-      },
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 176,
-          "max" : 10,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.0001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id" : "[BMS] Mod1.Cel4.Volts",
-        "name" : "High voltage battery module 1 cell 4 voltage"
-      },
-      {
-        "format" : {
-          "bitLength" : 8,
-          "bitOffset" : 248,
-          "max" : 100,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "percent"
-        },
-        "id" : "[BMS] Mod1.Cel5.SoC",
-        "name" : "High voltage battery module 1 cell 5 state of charge"
-      },
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 232,
-          "max" : 10,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.0001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id" : "[BMS] Mod1.Cel5.Volts",
-        "name" : "High voltage battery module 1 cell 5 voltage"
-      },
-      {
-        "format" : {
-          "bitLength" : 8,
-          "bitOffset" : 304,
-          "max" : 100,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "percent"
-        },
-        "id" : "[BMS] Mod1.Cel6.SoC",
-        "name" : "High voltage battery module 1 cell 6 state of charge"
-      },
-      {
-        "format" : {
-          "bitLength" : 16,
-          "bitOffset" : 288,
-          "max" : 10,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 0.0001,
-          "signed" : false,
-          "unit" : "volts"
-        },
-        "id" : "[BMS] Mod1.Cel6.Volts",
-        "name" : "High voltage battery module 1 cell 6 voltage"
-      },
-      {
-        "format" : {
-          "bitLength" : 8,
-          "bitOffset" : 0,
-          "max" : 255,
-          "min" : 0,
-          "offset" : 0,
-          "scalar" : 1,
-          "signed" : false,
-          "unit" : "scalar"
-        },
-        "id" : "[BMS] Mod1.ID",
-        "name" : "High voltage battery module 1 id"
-      }
-    ],
-    "updateFrequency" : 10
-  }
+{ "header": 2016, "parameter": {"service22": {"pid": 2258}}, "updateFrequency": 1,
+  "signals": [
+    {"id": "[ECU] HVBatterySoC", "format": {"bitLength": 16, "bitOffset": 0, "max": 100, "min": 0, "offset": 0, "scalar": 0.01, "signed": false, "unit": "percent"}, "name": "HV battery charge", "suggestedMetric": "stateOfCharge", "description": "High voltage battery state of charge."}
+  ]},
+{ "header": 2016, "parameter": {"service22": {"pid": 8289}}, "updateFrequency": 0.25,
+  "signals": [
+    {"id": "[ECU] Acc.PedalPos1", "format": {"bitLength": 16, "bitOffset": 0, "max": 65, "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"}, "name": "Accelerator pedal position sensor 1"}
+  ]},
+{ "header": 2016, "parameter": {"service22": {"pid": 8290}}, "updateFrequency": 0.25,
+  "signals": [
+    {"id": "[ECU] Acc.PedalPos2", "format": {"bitLength": 16, "bitOffset": 0, "max": 65, "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"}, "name": "Accelerator pedal position sensor 2"}
+  ]},
+{ "header": 2016, "parameter": {"service22": {"pid": 62477}}, "updateFrequency": 0.25,
+  "signals": [
+    {"id": "[ECU] VehicleSpeed", "format": {"bitLength": 8, "bitOffset": 0, "max": 255, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "kilometersPerHour"}, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed."}
+  ]},
+{ "header": 2016, "parameter": {"service22": {"pid": 62495}}, "updateFrequency": 1,
+  "signals": [
+    {"id": "[ECU] EngineRunTime", "format": {"bitLength": 16, "bitOffset": 0, "max": 65535, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "seconds"}, "name": "Time since engine start", "description": "How long it's been since the engine started."}
+  ]},
+{ "header": 2016, "parameter": {"service22": {"pid": 62530}}, "updateFrequency": 0.25,
+  "signals": [
+    {"id": "[ECU] Voltage", "format": {"bitLength": 16, "bitOffset": 0, "max": 65, "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"}, "name": "Control module voltage"}
+  ]},
+{ "header": 2021, "parameter": {"service22": {"pid": 20992}}, "updateFrequency": 3600,
+  "signals": [
+    {"id": "[BMS] LaunchCount", "format": {"bitLength": 32, "bitOffset": 0, "max": 1000000, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Launch control count", "description": "How many times you've initiated launch control on the car."}
+  ]},
+{ "header": 1811, "parameter": {"service22": {"pid": 11049}}, "updateFrequency": 0.25,
+  "signals": [
+    {"id": "[ABS] SteerWheel.Angle", "format": {"bitLength": 16, "bitOffset": 0, "max": 360, "min": -360, "offset": 0, "scalar": 0, "signed": true, "unit": "radians"}, "name": "Steering wheel angle", "description": "Positive is rotated to the left, negative is rotated to the right."}
+  ]},
+{ "header": 2021, "parameter": {"service22": {"pid": 6224}}, "updateFrequency": 10,
+  "signals": [
+    {"id": "[BMS] Mod1.Cel1.SoC",   "format": {"bitLength": 8,  "bitOffset": 24,  "max": 100, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "percent"}, "name": "High voltage battery module 1 cell 1 state of charge"},
+    {"id": "[BMS] Mod1.Cel1.Volts", "format": {"bitLength": 16, "bitOffset": 8,   "max": 10,  "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"},   "name": "High voltage battery module 1 cell 1 voltage"},
+    {"id": "[BMS] Mod1.Cel2.SoC",   "format": {"bitLength": 8,  "bitOffset": 80,  "max": 100, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "percent"}, "name": "High voltage battery module 1 cell 2 state of charge"},
+    {"id": "[BMS] Mod1.Cel2.Volts", "format": {"bitLength": 16, "bitOffset": 64,  "max": 10,  "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"},   "name": "High voltage battery module 1 cell 2 voltage"},
+    {"id": "[BMS] Mod1.Cel3.SoC",   "format": {"bitLength": 8,  "bitOffset": 136, "max": 100, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "percent"}, "name": "High voltage battery module 1 cell 3 state of charge"},
+    {"id": "[BMS] Mod1.Cel3.Volts", "format": {"bitLength": 16, "bitOffset": 120, "max": 10,  "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"},   "name": "High voltage battery module 1 cell 3 voltage"},
+    {"id": "[BMS] Mod1.Cel4.SoC",   "format": {"bitLength": 8,  "bitOffset": 192, "max": 100, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "percent"}, "name": "High voltage battery module 1 cell 4 state of charge"},
+    {"id": "[BMS] Mod1.Cel4.Volts", "format": {"bitLength": 16, "bitOffset": 176, "max": 10,  "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"},   "name": "High voltage battery module 1 cell 4 voltage"},
+    {"id": "[BMS] Mod1.Cel5.SoC",   "format": {"bitLength": 8,  "bitOffset": 248, "max": 100, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "percent"}, "name": "High voltage battery module 1 cell 5 state of charge"},
+    {"id": "[BMS] Mod1.Cel5.Volts", "format": {"bitLength": 16, "bitOffset": 232, "max": 10,  "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"},   "name": "High voltage battery module 1 cell 5 voltage"},
+    {"id": "[BMS] Mod1.Cel6.SoC",   "format": {"bitLength": 8,  "bitOffset": 304, "max": 100, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "percent"}, "name": "High voltage battery module 1 cell 6 state of charge"},
+    {"id": "[BMS] Mod1.Cel6.Volts", "format": {"bitLength": 16, "bitOffset": 288, "max": 10,  "min": 0, "offset": 0, "scalar": 0, "signed": false, "unit": "volts"},   "name": "High voltage battery module 1 cell 6 voltage"},
+    {"id": "[BMS] Mod1.ID",         "format": {"bitLength": 8,  "bitOffset": 0,   "max": 255, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"},  "name": "High voltage battery module 1 id"}
+  ]}
 ]
