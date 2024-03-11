@@ -1,4 +1,8 @@
-[
+{ "commands": [
+{ "header": 1811, "receiveAddress": 1917, "parameter": {"service22": {"pid": 11049}}, "updateFrequency": 0.25,
+  "signals": [
+    {"id": "[ABS] SteerWheel.Angle", "format": {"bitLength": 16, "bitOffset": 0, "max": 360, "min": -360, "offset": 0, "scalar": 0.001, "signed": true, "unit": "radians"}, "name": "Steering wheel angle", "description": "Positive is rotated to the left, negative is rotated to the right."}
+  ]},
 { "header": 2016, "receiveAddress": 2024, "parameter": {"service22": {"pid": 2258}}, "updateFrequency": 1,
   "signals": [
     {"id": "[ECU] HVBatterySoC", "format": {"bitLength": 16, "bitOffset": 0, "max": 100, "min": 0, "offset": 0, "scalar": 0.01, "signed": false, "unit": "percent"}, "name": "HV battery charge", "suggestedMetric": "stateOfCharge", "description": "High voltage battery state of charge."}
@@ -22,14 +26,6 @@
 { "header": 2016, "receiveAddress": 2024, "parameter": {"service22": {"pid": 62530}}, "updateFrequency": 0.25,
   "signals": [
     {"id": "[ECU] Voltage", "format": {"bitLength": 16, "bitOffset": 0, "max": 65, "min": 0, "offset": 0, "scalar": 0.001, "signed": false, "unit": "volts"}, "name": "Control module voltage"}
-  ]},
-{ "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 20992}}, "updateFrequency": 3600,
-  "signals": [
-    {"id": "[BMS] LaunchCount", "format": {"bitLength": 32, "bitOffset": 0, "max": 1000000, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Launch control count", "description": "How many times you've initiated launch control on the car."}
-  ]},
-{ "header": 1811, "receiveAddress": 1917, "parameter": {"service22": {"pid": 11049}}, "updateFrequency": 0.25,
-  "signals": [
-    {"id": "[ABS] SteerWheel.Angle", "format": {"bitLength": 16, "bitOffset": 0, "max": 360, "min": -360, "offset": 0, "scalar": 0.001, "signed": true, "unit": "radians"}, "name": "Steering wheel angle", "description": "Positive is rotated to the left, negative is rotated to the right."}
   ]},
 { "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 6224}}, "updateFrequency": 10,
   "signals": [
@@ -543,4 +539,9 @@
     {"id": "[BMS] Mod32.Cel6.Volts", "format": {"bitLength": 16, "bitOffset": 288, "max": 10,  "min": 0, "offset": 0, "scalar": 0.0001, "signed": false, "unit": "volts"},   "name": "High voltage battery module 32 cell 6 voltage"},
     {"id": "[BMS] Mod32.ID",         "format": {"bitLength": 8,  "bitOffset": 0,   "max": 255, "min": 0, "offset": 0, "scalar": 1,      "signed": false, "unit": "scalar"},  "name": "High voltage battery module 32 id"}
   ]},
+{ "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 20992}}, "updateFrequency": 3600,
+  "signals": [
+    {"id": "[BMS] LaunchCount", "format": {"bitLength": 32, "bitOffset": 0, "max": 1000000, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Launch control count", "description": "How many times you've initiated launch control on the car."}
+  ]}
 ]
+}
