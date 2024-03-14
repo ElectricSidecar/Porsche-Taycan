@@ -1,7 +1,7 @@
 { "commands": [
 { "header": 1811, "receiveAddress": 1917, "parameter": {"service22": {"pid": 11049}}, "updateFrequency": 0.25,
   "signals": [
-    {"id": "[Control] SteerWheel.Angle", "format": {"bitLength": 16, "bitOffset": 0, "max": 360, "min": -360, "offset": 0, "scalar": 0.001, "signed": true, "unit": "radians"}, "name": "Steering wheel angle", "description": "Positive is rotated to the left, negative is rotated to the right."}
+    {"id": "[Control] SteeringWheel.Angle", "format": {"bitLength": 16, "bitOffset": 0, "max": 360, "min": -360, "offset": 0, "scalar": 0.001, "signed": true, "unit": "radians"}, "name": "Steering wheel angle", "description": "Positive is rotated to the left, negative is rotated to the right."}
   ]},
 { "header": 2016, "receiveAddress": 2024, "parameter": {"service22": {"pid": 2258}}, "updateFrequency": 1,
   "signals": [
