@@ -545,7 +545,7 @@
   ]}
 ],
 "signalGroups": [
-  {"id": "[Battery] BatteryPack.SoC",   "matchingRegex": "\\[BMS\\] (Mod\\d+)\\.(Cel\\d+)\\.SoC",   "suggestedMetricGroup": "batteryModulesStateOfCharge"},
-  {"id": "[Battery] BatteryPack.Volts", "matchingRegex": "\\[BMS\\] (Mod\\d+)\\.(Cel\\d+)\\.Volts", "suggestedMetricGroup": "batteryModulesVoltage"}
+  {"id": "[Battery] BatteryPack.SoC",   "matchingRegex": "\\[Battery\\] (Module\\d+)\\.(Cell\\d+)\\.SoC",   "suggestedMetricGroup": "batteryModulesStateOfCharge"},
+  {"id": "[Battery] BatteryPack.Volts", "matchingRegex": "\\[Battery\\] (Module\\d+)\\.(Cell\\d+)\\.Volts", "suggestedMetricGroup": "batteryModulesVoltage"}
 ]
 }
