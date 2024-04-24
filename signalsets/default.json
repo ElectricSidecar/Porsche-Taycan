@@ -542,6 +542,10 @@
 { "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 20992}}, "updateFrequency": 3600,
   "signals": [
     {"id": "[Stats] LaunchCount", "format": {"bitLength": 32, "bitOffset": 0, "max": 1000000, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Launch control count", "description": "How many times you've initiated launch control on the car."}
+  ]},
+{ "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 62512}}, "updateFrequency": 3600,
+  "signals": [
+    {"id": "[Stats] PostDTC.warmups", "format": {"bitLength": 8, "bitOffset": 0, "max": 255, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Number of warm-ups since DTCs cleared"}
   ]}
 ],
 "signalGroups": [
