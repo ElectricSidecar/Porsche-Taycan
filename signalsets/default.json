@@ -27,6 +27,10 @@
   "signals": [
     {"id": "[Stats] PostDTC.warmups", "format": {"bitLength": 8, "bitOffset": 0, "max": 255, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Number of warm-ups since DTCs cleared"}
   ]},
+{ "header": 2016, "receiveAddress": 2024, "parameter": {"service22": {"pid": 62513}}, "updateFrequency": 60,
+  "signals": [
+    {"id": "[Stats] PostDTC.distance", "format": {"bitLength": 16, "bitOffset": 0, "max": 65535, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "kilometers"}, "name": "Distance traveled since DTCs cleared"}
+  ]},
 { "header": 2016, "receiveAddress": 2024, "parameter": {"service22": {"pid": 62530}}, "updateFrequency": 0.25,
   "signals": [
     {"id": "[ECU] Voltage", "format": {"bitLength": 16, "bitOffset": 0, "max": 65, "min": 0, "offset": 0, "scalar": 0.001, "signed": false, "unit": "volts"}, "name": "Control module voltage"}
