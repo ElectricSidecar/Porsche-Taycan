@@ -23,6 +23,10 @@
   "signals": [
     {"id": "[Clocks] Engine.RunTime", "format": {"bitLength": 16, "bitOffset": 0, "max": 65535, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "seconds"}, "name": "Time since engine start", "description": "How long it's been since the engine started."}
   ]},
+{ "header": 2016, "receiveAddress": 2024, "parameter": {"service22": {"pid": 62512}}, "updateFrequency": 3600,
+  "signals": [
+    {"id": "[Stats] PostDTC.warmups", "format": {"bitLength": 8, "bitOffset": 0, "max": 255, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Number of warm-ups since DTCs cleared"}
+  ]},
 { "header": 2016, "receiveAddress": 2024, "parameter": {"service22": {"pid": 62530}}, "updateFrequency": 0.25,
   "signals": [
     {"id": "[ECU] Voltage", "format": {"bitLength": 16, "bitOffset": 0, "max": 65, "min": 0, "offset": 0, "scalar": 0.001, "signed": false, "unit": "volts"}, "name": "Control module voltage"}
@@ -542,10 +546,6 @@
 { "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 20992}}, "updateFrequency": 3600,
   "signals": [
     {"id": "[Stats] LaunchCount", "format": {"bitLength": 32, "bitOffset": 0, "max": 1000000, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Launch control count", "description": "How many times you've initiated launch control on the car."}
-  ]},
-{ "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 62512}}, "updateFrequency": 3600,
-  "signals": [
-    {"id": "[Stats] PostDTC.warmups", "format": {"bitLength": 8, "bitOffset": 0, "max": 255, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Number of warm-ups since DTCs cleared"}
   ]}
 ],
 "signalGroups": [
