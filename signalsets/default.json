@@ -35,6 +35,10 @@
   "signals": [
     {"id": "[ECU] Voltage", "format": {"bitLength": 16, "bitOffset": 0, "max": 65, "min": 0, "offset": 0, "scalar": 0.001, "signed": false, "unit": "volts"}, "name": "Control module voltage"}
   ]},
+{ "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 6145}}, "updateFrequency": 1,
+  "signals": [
+    {"id": "[Battery] HVBattery.voltage", "format": {"bitLength": 16, "bitOffset": 0, "max": 6553, "min": 0, "offset": 0, "scalar": 0.1, "signed": false, "unit": "volts"}, "name": "Battery voltage"}
+  ]},
 { "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 6224}}, "updateFrequency": 10,
   "signals": [
     {"id": "[Battery] Module1.Cell1.SoC",   "format": {"bitLength": 8,  "bitOffset": 24,  "max": 100, "min": 0, "offset": 0, "scalar": 1,      "signed": false, "unit": "percent"}, "name": "High voltage battery module 1 cell 1 state of charge"},
