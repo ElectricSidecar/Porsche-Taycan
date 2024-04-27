@@ -3,6 +3,10 @@
   "signals": [
     {"id": "[Control] SteeringWheel.Angle", "format": {"bitLength": 16, "bitOffset": 0, "max": 360, "min": -360, "offset": 0, "scalar": 0.001, "signed": true, "unit": "radians"}, "name": "Steering wheel angle", "description": "Positive is rotated to the left, negative is rotated to the right."}
   ]},
+{ "header": 1860, "receiveAddress": 1966, "parameter": {"service22": {"pid": 18789}}, "updateFrequency": 1,
+  "signals": [
+    {"id": "[Battery] HVBattery.Energy", "format": {"bitLength": 16, "bitOffset": 0, "max": 3276.75, "min": 0, "offset": 0, "scalar": 0.05, "signed": false, "unit": "kilowattHours"}, "name": "Energy stored in the high voltage battery"}
+  ]},
 { "header": 2016, "receiveAddress": 2024, "parameter": {"service22": {"pid": 2258}}, "updateFrequency": 1,
   "signals": [
     {"id": "[Battery] HVBattery.SoC", "format": {"bitLength": 16, "bitOffset": 0, "max": 100, "min": 0, "offset": 0, "scalar": 0.01, "signed": false, "unit": "percent"}, "name": "HV battery charge", "suggestedMetric": "stateOfCharge", "description": "High voltage battery state of charge."}
