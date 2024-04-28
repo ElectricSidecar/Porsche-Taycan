@@ -551,6 +551,10 @@
     {"id": "[Battery] Module32.Cell6.Volts", "format": {"bitLength": 16, "bitOffset": 288, "max": 10,  "min": 0, "offset": 0, "scalar": 0.0001, "signed": false, "unit": "volts"},   "name": "High voltage battery module 32 cell 6 voltage"},
     {"id": "[Battery] Module32.ID",         "format": {"bitLength": 8,  "bitOffset": 0,   "max": 255, "min": 0, "offset": 0, "scalar": 1,      "signed": false, "unit": "scalar"},  "name": "High voltage battery module 32 id"}
   ]},
+{ "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 20960}}, "updateFrequency": 1,
+  "signals": [
+    {"id": "[Battery] HVBattery.SoH", "format": {"bitLength": 16, "bitOffset": 0, "max": 6553, "min": 0, "offset": -14162, "scalar": 0.127, "signed": false, "unit": "percent"}, "name": "Battery state of health"}
+  ]},
 { "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 20992}}, "updateFrequency": 3600,
   "signals": [
     {"id": "[Stats] LaunchCount", "format": {"bitLength": 32, "bitOffset": 0, "max": 1000000, "min": 0, "offset": 0, "scalar": 1, "signed": false, "unit": "scalar"}, "name": "Launch control count", "description": "How many times you've initiated launch control on the car."}
