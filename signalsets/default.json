@@ -553,7 +553,7 @@
   ]},
 { "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 20960}}, "updateFrequency": 1,
   "signals": [
-    {"id": "[Battery] HVBattery.SoH", "format": {"bitLength": 16, "bitOffset": 0, "max": 100, "min": 0, "offset": -14162, "scalar": 0.127, "signed": false, "unit": "percent"}, "name": "Battery state of health"}
+    {"id": "[Battery] HVBattery.SoH", "format": {"bitLength": 16, "bitOffset": 0, "max": 100, "min": 0, "offset": -1798.574, "scalar": 0.127, "signed": false, "unit": "percent"}, "name": "Battery state of health"}
   ]},
 { "header": 2021, "receiveAddress": 2029, "parameter": {"service22": {"pid": 20992}}, "updateFrequency": 3600,
   "signals": [
