@@ -555,7 +555,7 @@
     {"id": "[Battery] Module32.Cell6.Volts", "fmt": {"bix": 288, "len": 16, "max": 10,  "mul": 0.0001, "unit": "volts"   }, "name": "High voltage battery module 32 cell 6 voltage"},
     {"id": "[Battery] Module32.ID",          "fmt": {            "len": 8,  "max": 255,                "unit": "scalar"  }, "name": "High voltage battery module 32 id"}
   ]},
-{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "51E0"}, "freq": 1,
+{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "51E0"}, "freq": 30,
   "signals": [
     {"id": "[Battery] HVBattery.SoH", "fmt": { "len": 16, "max": 100, "mul": 0.127, "add": -1798.574, "unit": "percent" }, "name": "Battery state of health", "suggestedMetric": "stateOfHealth"}
   ]},
