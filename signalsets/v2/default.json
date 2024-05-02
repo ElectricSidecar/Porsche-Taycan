@@ -5,7 +5,7 @@
   ]},
 { "hdr": "744", "rax": "7AE", "cmd": {"22": "4965"}, "freq": 1,
   "signals": [
-    {"id": "[Battery] HVBattery.Energy", "fmt": { "len": 16, "max": 3276.75, "mul": 0.05, "unit": "kilowattHours" }, "name": "Energy stored in the high voltage battery"}
+    {"id": "[Battery] HVBattery.Energy", "fmt": { "len": 16, "max": 3276.75, "mul": 0.05, "unit": "kilowattHours" }, "name": "HV battery energy", "description": "Energy stored in the high voltage battery"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "08D2"}, "freq": 1,
   "signals": [
