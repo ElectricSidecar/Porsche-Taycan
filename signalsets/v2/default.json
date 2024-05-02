@@ -41,7 +41,7 @@
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1801"}, "freq": 1,
   "signals": [
-    {"id": "[Battery] HVBattery.voltage", "fmt": { "len": 16, "max": 6553, "mul": 0.1, "unit": "volts" }, "name": "Battery voltage"}
+    {"id": "[Battery] HVBattery.voltage", "fmt": { "len": 16, "max": 6553, "mul": 0.1, "unit": "volts" }, "name": "HV battery voltage"}
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1850"}, "freq": 10,
   "signals": [
