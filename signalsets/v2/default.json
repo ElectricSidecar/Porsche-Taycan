@@ -3,7 +3,7 @@
   "signals": [
     {"id": "[Control] SteeringWheel.Angle", "fmt": { "len": 16, "max": 360, "min": -360, "mul": 0.001, "sign": true, "unit": "radians" }, "name": "Steering wheel angle", "description": "Positive is rotated to the left, negative is rotated to the right."}
   ]},
-{ "hdr": "744", "rax": "7AE", "cmd": {"22": "4965"}, "freq": 1,
+{ "hdr": "744", "rax": "7AE", "fcm1": true, "cmd": {"22": "4965"}, "freq": 1,
   "signals": [
     {"id": "[Battery] HVBattery.Energy", "fmt": { "len": 16, "max": 3276.75, "mul": 0.05, "unit": "kilowattHours" }, "name": "HV battery energy", "description": "Energy stored in the high voltage battery"}
   ]},
