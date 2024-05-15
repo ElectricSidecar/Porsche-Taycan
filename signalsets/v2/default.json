@@ -29,11 +29,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F430"}, "freq": 3600,
   "signals": [
-    {"id": "[Stats] PostDTC.warmups", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of warm-ups since DTCs cleared"}
+    {"id": "[Monitors] TAYCAN_WARM_UPS", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of warm-ups since DTCs cleared"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F431"}, "freq": 60,
   "signals": [
-    {"id": "[Stats] PostDTC.distance", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since DTCs cleared"}
+    {"id": "[Monitors] TAYCAN_CLR_DIST", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since DTCs cleared"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F442"}, "freq": 0.25,
   "signals": [
