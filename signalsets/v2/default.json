@@ -585,11 +585,11 @@
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "51E0"}, "freq": 30,
   "signals": [
-    {"id": "[Battery] HVBattery.SoH", "fmt": { "len": 16, "max": 100, "mul": 0.127, "add": -1798.574, "unit": "percent" }, "name": "HV battery health", "suggestedMetric": "stateOfHealth"}
+    {"id": "TAYCAN_HVBAT_SOH", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 0.127, "add": -1798.574, "unit": "percent" }, "name": "HV battery health", "suggestedMetric": "stateOfHealth"}
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "5200"}, "freq": 3600,
   "signals": [
-    {"id": "[Stats] LaunchCount", "fmt": { "len": 32, "max": 1000000, "unit": "scalar" }, "name": "Launch control count", "description": "How many times you've initiated launch control on the car."}
+    {"id": "TAYCAN_LAUNCH", "path": "Stats", "fmt": { "len": 32, "max": 1000000, "unit": "scalar" }, "name": "Launch control count", "description": "How many times you've initiated launch control on the car."}
   ]}
 ],
 "signalGroups": [
