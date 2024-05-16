@@ -13,7 +13,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "08D2"}, "freq": 1,
   "signals": [
-    {"id": "[Battery] HVBattery.SoC", "fmt": { "len": 16, "max": 100, "mul": 0.01, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge", "description": "HV battery charge"}
+    {"id": "[Battery] HVBattery.SoC", "fmt": { "len": 16, "max": 100, "mul": 0.01, "unit": "percent" }, "name": "HV battery charge (displayed)", "suggestedMetric": "stateOfCharge", "description": "HV battery charge displayed on the dashboard"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1156"}, "freq": 1,
+  "signals": [
+    {"id": "TAYCAN_HVBAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 0.5, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "2061"}, "freq": 0.25,
   "signals": [
