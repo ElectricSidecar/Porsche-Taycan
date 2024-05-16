@@ -1,4 +1,20 @@
 { "commands": [
+{ "hdr": "713", "rax": "77D", "cmd": {"22": "2B1B"}, "freq": 0.25,
+  "signals": [
+    {"id": "TAYCAN_TIRE_FL_SPD", "path": "Movement", "fmt": { "len": 16, "max": 1000, "mul": 0.05625, "sign": false, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "713", "rax": "77D", "cmd": {"22": "2B1C"}, "freq": 0.25,
+  "signals": [
+    {"id": "TAYCAN_TIRE_FR_SPD", "path": "Movement", "fmt": { "len": 16, "max": 1000, "mul": 0.05625, "sign": false, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "713", "rax": "77D", "cmd": {"22": "2B1D"}, "freq": 0.25,
+  "signals": [
+    {"id": "TAYCAN_TIRE_RL_SPD", "path": "Movement", "fmt": { "len": 16, "max": 1000, "mul": 0.05625, "sign": false, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "713", "rax": "77D", "cmd": {"22": "2B1E"}, "freq": 0.25,
+  "signals": [
+    {"id": "TAYCAN_TIRE_RR_SPD", "path": "Movement", "fmt": { "len": 16, "max": 1000, "mul": 0.05625, "sign": false, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
 { "hdr": "713", "rax": "77D", "cmd": {"22": "2B29"}, "freq": 0.25,
   "signals": [
     {"id": "[Control] SteeringWheel.Angle", "fmt": { "len": 16, "max": 360, "min": -360, "mul": 0.001, "sign": true, "unit": "radians" }, "name": "Steering wheel angle", "description": "Positive is rotated to the left, negative is rotated to the right."}
