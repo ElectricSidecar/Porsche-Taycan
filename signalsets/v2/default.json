@@ -27,6 +27,10 @@
   "signals": [
     {"id": "[Clocks] Engine.RunTime", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F421"}, "freq": 1,
+  "signals": [
+    {"id": "[DTCs] TAYCAN_MIL_DIST", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled while MIL was activated"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F430"}, "freq": 3600,
   "signals": [
     {"id": "[DTCs] TAYCAN_WARM_UPS", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of warm-ups since DTCs cleared"}
