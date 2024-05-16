@@ -573,7 +573,7 @@
   ]}
 ],
 "signalGroups": [
-  {"id": "[Battery] BatteryPack.SoC",   "matchingRegex": "\\[Battery\\] (Module\\d+)\\.(Cell\\d+)\\.SoC",   "suggestedMetricGroup": "batteryModulesStateOfCharge", "name": "HV battery cell state of charge"},
-  {"id": "[Battery] BatteryPack.Volts", "matchingRegex": "\\[Battery\\] (Module\\d+)\\.(Cell\\d+)\\.Volts", "suggestedMetricGroup": "batteryModulesVoltage", "name": "HV battery cell voltage"}
+  {"id": "[Battery] BatteryPack.SoC",   "matchingRegex": "\\[Battery\\] BatteryPack\\.(Module\\d+)\\.(Cell\\d+)\\.SoC",   "suggestedMetricGroup": "batteryModulesStateOfCharge", "name": "HV battery cell state of charge"},
+  {"id": "[Battery] BatteryPack.Volts", "matchingRegex": "\\[Battery\\] BatteryPack\\.(Module\\d+)\\.(Cell\\d+)\\.Volts", "suggestedMetricGroup": "batteryModulesVoltage", "name": "HV battery cell voltage"}
 ]
 }
