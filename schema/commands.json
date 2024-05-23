@@ -25,9 +25,7 @@
                 "type": "object",
                 "properties": {
                   "id": { "type": "string" },
-                  "path": { "type": "string" },
                   "name": { "type": "string" },
-                  "description": { "type": "string" },
                   "fmt": {
                     "type": "object",
                     "properties": {
@@ -43,7 +41,18 @@
                       "omax": { "type": "number" },
                       "oval": { "type": "number" }
                     }
-                  }
+                  },
+                  "path": { "type": "string" },
+                  "suggestedMetric": { "enum": [
+                    "fuelTankLevel",
+                    "odometer",
+                    "speed",
+                    "stateOfCharge",
+                    "stateOfHealth",
+                    "batteryModulesStateOfCharge",
+                    "batteryModulesVoltage" 
+                  ]},
+                  "description": { "type": "string" }
                 },
                 "required": [
                   "id",
