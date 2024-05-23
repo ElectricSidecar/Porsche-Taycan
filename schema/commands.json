@@ -3,6 +3,7 @@
     "properties": {
       "commands": {
         "type": "array",
+        "uniqueItems": true,
         "minItems": 1,
         "items": {
           "type": "object",
@@ -20,6 +21,7 @@
             "freq": { "type": "number", "exclusiveMinimum": 0 },
             "signals": {
               "type": "array",
+              "uniqueItems": true,
               "minItems": 1,
               "items": {
                 "type": "object",
@@ -71,6 +73,7 @@
       },
       "signalGroups": {
         "type": "array",
+        "uniqueItems": true,
         "minItems": 1,
         "items": {
           "type": "object",
