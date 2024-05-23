@@ -1,5 +1,5 @@
 { "commands": [
-{ "hdr": "713", "rax": "77D", "cmd": {"22": "2B1B"}, "freq": 0.25,
+{ "rax": "77D", "cmd": {"22": "2B1B"}, "freq": 0.25,
   "signals": [
     {"id": "TAYCAN_TIRE_FL_SPD", "path": "Movement", "fmt": { "len": 16, "max": 1000, "mul": 0.05625, "sign": false, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
   ]},
