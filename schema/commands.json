@@ -81,7 +81,7 @@
               "batteryModulesStateOfCharge",
               "batteryModulesVoltage" 
             ]},
-            "name": { "type": "string" },
+            "name": { "type": "string" }
           },
           "required": [
             "id",
