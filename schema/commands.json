@@ -39,7 +39,8 @@
                       "unit": { "type": "string" },
                       "omin": { "type": "number" },
                       "omax": { "type": "number" },
-                      "oval": { "type": "number" }
+                      "oval": { "type": "number" },
+                      "map": { "type": "object" }
                     }
                   },
                   "path": { "type": "string" },
