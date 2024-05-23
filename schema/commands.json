@@ -49,9 +49,7 @@
                     "odometer",
                     "speed",
                     "stateOfCharge",
-                    "stateOfHealth",
-                    "batteryModulesStateOfCharge",
-                    "batteryModulesVoltage" 
+                    "stateOfHealth"
                   ]},
                   "description": { "type": "string" }
                 },
@@ -68,6 +66,26 @@
             "cmd",
             "freq",
             "signals"
+          ]
+        }
+      },
+      "signalGroups": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "matchingRegex": { "type": "string" },
+            "suggestedMetricGroup": { "enum": [
+              "batteryModulesStateOfCharge",
+              "batteryModulesVoltage" 
+            ]},
+            "name": { "type": "string" },
+          },
+          "required": [
+            "id",
+            "matchingRegex"
           ]
         }
       }
