@@ -7,8 +7,8 @@
         "items": {
           "type": "object",
           "properties": {
-            "hdr": { "type": "string" },
-            "rax": { "type": "string" },
+            "hdr": { "type": "string", "minLength": 3, "maxLength": 3 },
+            "rax": { "type": "string", "minLength": 3, "maxLength": 3 },
             "fcm1": { "type": "boolean" },
             "cmd": {
               "type": "object",
@@ -17,7 +17,7 @@
                 "22": { "type": "string", "minLength": 4, "maxLength": 4 }
               }
             },
-            "freq": { "type": "number" },
+            "freq": { "type": "number", "exclusiveMinimum": 0 },
             "signals": {
               "type": "array",
               "minItems": 1,
