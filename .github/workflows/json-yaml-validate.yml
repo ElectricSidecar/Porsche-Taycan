@@ -23,7 +23,7 @@ jobs:
           base_dir: signalsets/v3/
           json_schema: schema/v3.json
 
-  json-yaml-validate-v2:
+  json-yaml-validate-meta:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,5 +33,5 @@ jobs:
         uses: GrantBirki/json-yaml-validate@v2.7.1
         with:
           comment: "true"
-          base_dir: signalsets/v2/
-          json_schema: schema/v2.json
+          base_dir: meta/
+          json_schema: schema/status.json
