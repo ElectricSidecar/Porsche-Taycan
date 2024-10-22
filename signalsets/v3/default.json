@@ -1,7 +1,7 @@
 { "commands": [
-{ "hdr": "710", "rax": "77A", "cmd": {"22": "2AB5"}, "freq": 5,
+{ "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB6"}, "freq": 5,
   "signals": [
-    {"id": "TAYCAN_RANGE", "path": "Trips", "fmt": {"bix": 32, "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Range remaining", "suggestedMetric": "electricRange"}
+    {"id": "TAYCAN_RANGE", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Range remaining", "suggestedMetric": "electricRange"}
   ]},
 { "hdr": "713", "rax": "77D", "cmd": {"22": "2B1B"}, "freq": 0.25,
   "signals": [
