@@ -29,7 +29,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "028D"}, "freq": 1,
   "signals": [
-    {"id": "TAYCAN_ECU_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 6553, "mul": 0.1, "add": -40, "unit": "celsius" }, "name": "ECU temperature"}
+    {"id": "TAYCAN_ECU_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "add": -40, "unit": "celsius" }, "name": "ECU temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "08D2"}, "freq": 1,
   "signals": [
